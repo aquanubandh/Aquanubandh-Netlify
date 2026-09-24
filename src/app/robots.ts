@@ -6,6 +6,9 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://aquanubandh.com/sitemap.xml",
+    sitemap: [
+      "https://aquanubandh.com/sitemap.xml",
+      "https://lab.aquanubandh.com/sitemap.xml",
+    ],
   };
 }
