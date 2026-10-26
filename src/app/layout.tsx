@@ -3,8 +3,8 @@ import "./globals.css";
 import HeaderFooterWrapper from "./components/HeaderFooterWrapper";
 
 export const metadata: Metadata = {
-  title: "Aquanubandh",
-  description: "Best Shrimp Feed Tracking App for Vannamei Farming in India",
+  title: "Aquanubandh Plus",
+  description: "Smart Aquaculture Platform & Farm Software for Shrimp Farmers and Seafood Buyers in India",
   icons: {
     icon: "/assets/logo.webp",
     shortcut: "/assets/logo.webp",

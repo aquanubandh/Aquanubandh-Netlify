@@ -34,3 +34,4 @@ yarn-error.log*
 # agent specific
 /.agents
 /skills-lock.json
+reference app/

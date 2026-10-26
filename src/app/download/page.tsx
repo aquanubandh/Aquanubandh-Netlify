@@ -4,8 +4,8 @@ import { ArrowRight, X } from "lucide-react";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Download Aquanubandh - India's #1 Shrimp Farm App",
-  description: "Download the free Aquanubandh app for Vannamei shrimp pond tracking, FCR calculation, feed logging, and biomass estimation in India.",
+  title: "Download Aquanubandh Plus - India's #1 Shrimp Farm App",
+  description: "Download the free Aquanubandh Plus app for offline shrimp pond tracking, staff attendance, inventory management, buying PL, selling harvest, and live prices in India.",
   alternates: {
     canonical: "https://aquanubandh.com/download",
   },
@@ -47,11 +47,11 @@ export default async function DownloadPage() {
           <X style={{ width: 15, height: 15 }} />
         </Link>
         <div className="dl-modal-logo">
-          <img src="/assets/logo.webp" alt="Aquanubandh - Smart Aquaculture Management Logo" />
-          <span>Aquanubandh</span>
+          <img src="/assets/logo.webp" alt="Aquanubandh Plus - Smart Aquaculture Management Logo" />
+          <span>Aquanubandh Plus</span>
         </div>
         <h1 className="dl-modal-title">Download the app</h1>
-        <p className="dl-modal-sub">Free for Indian shrimp farmers. Available on iOS and Android.</p>
+        <p className="dl-modal-sub">Offline pond logs, attendance, inventory, Buy PL, Sell harvest &amp; live prices. Available on iOS and Android.</p>
         
         <div className="dl-modal-options">
           <a className="dl-option" href={iosUrl} target="_blank" rel="noopener noreferrer">

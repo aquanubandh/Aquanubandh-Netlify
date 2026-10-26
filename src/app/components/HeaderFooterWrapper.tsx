@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ShoppingCart, Menu, X, ArrowRight, Download, Home, Map, Layers, Tag, MessageCircle, Info, Mail, BookOpen } from "lucide-react";
+import { ShoppingCart, Menu, X, ArrowRight, Download, Home, Info, Mail, BookOpen, Smartphone, Truck, Layers } from "lucide-react";
 
 export default function HeaderFooterWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -26,10 +26,11 @@ export default function HeaderFooterWrapper({ children }: { children: React.Reac
             <span className="nav-logo-name">Aquanubandh</span>
           </Link>
           <div className="nav-links">
-            <a href="/#how">How it works</a>
-            <a href="/#features">Features</a>
-            <a href="/#pricing">Pricing</a>
-            <a href="/#faq">FAQ</a>
+            <a href="/farmers">For Farmers</a>
+            <a href="/farmers#how">How it works</a>
+            <a href="/farmers#features">Features</a>
+            <a href="/farmers#pricing">Pricing</a>
+            <a href="/farmers#faq">FAQ</a>
           </div>
           <div className="nav-right">
             <Link href="/shop" className="nav-shop-btn" aria-label="Shop">
@@ -49,14 +50,15 @@ export default function HeaderFooterWrapper({ children }: { children: React.Reac
         <div className="footer-inner">
           <div>
             <div className="footer-logo">
-              <img src="/assets/logo.webp" alt="Aquanubandh - Smart Aquaculture Management Logo" />
-              <span className="footer-logo-name">Aquanubandh</span>
+              <img src="/assets/logo.webp" alt="Aquanubandh Plus - Smart Aquaculture Management Logo" />
+              <span className="footer-logo-name">Aquanubandh Plus</span>
             </div>
             <div className="footer-meta">
-              © 2026 Aquanubandh · Smart shrimp feeding app enabling Indian shrimp farmers advance the digital world.
+              © 2026 Aquanubandh Plus · Smart shrimp farm software enabling Indian shrimp farmers advance the digital world.
             </div>
           </div>
           <div className="footer-links">
+            <a href="/farmers">For Farmers</a>
             <Link href="/contact">Contact Us</Link>
             <a href="#">Privacy Policy</a>
             <Link href="/contact">WhatsApp Support</Link>
@@ -71,8 +73,8 @@ export default function HeaderFooterWrapper({ children }: { children: React.Reac
           <div className="menu-panel open">
             <div className="menu-header">
               <div className="menu-logo">
-                <img src="/assets/logo.webp" alt="Aquanubandh - Smart Aquaculture Management Logo" />
-                <span>Aquanubandh</span>
+                <img src="/assets/logo.webp" alt="Aquanubandh Plus - Smart Aquaculture Management Logo" />
+                <span>Aquanubandh Plus</span>
               </div>
               <button className="menu-close" onClick={() => setIsMenuOpen(false)}>
                 <X style={{ width: 16, height: 16 }} />
@@ -86,35 +88,21 @@ export default function HeaderFooterWrapper({ children }: { children: React.Reac
                     <div className="menu-item-icon"><Home style={{ width: 16, height: 16 }} /></div>
                     <div className="menu-item-text">
                       <div className="menu-item-label">Home</div>
-                      <div className="menu-item-sub">Return to homepage</div>
+                      <div className="menu-item-sub">Farmers &amp; seafood buyers hub</div>
                     </div>
                   </Link>
-                  <a className="menu-item" href="/#how" onClick={() => setIsMenuOpen(false)}>
-                    <div className="menu-item-icon"><Map style={{ width: 16, height: 16 }} /></div>
+                  <a className="menu-item" href="/farmers" onClick={() => setIsMenuOpen(false)}>
+                    <div className="menu-item-icon"><Smartphone style={{ width: 16, height: 16 }} /></div>
                     <div className="menu-item-text">
-                      <div className="menu-item-label">How it works</div>
-                      <div className="menu-item-sub">4-step walkthrough</div>
+                      <div className="menu-item-label">For Farmers (Software)</div>
+                      <div className="menu-item-sub">Offline, attendance, inventory &amp; prices</div>
                     </div>
                   </a>
-                  <a className="menu-item" href="/#features" onClick={() => setIsMenuOpen(false)}>
-                    <div className="menu-item-icon"><Layers style={{ width: 16, height: 16 }} /></div>
+                  <a className="menu-item" href="/seafood-buyers" onClick={() => setIsMenuOpen(false)}>
+                    <div className="menu-item-icon"><Truck style={{ width: 16, height: 16 }} /></div>
                     <div className="menu-item-text">
-                      <div className="menu-item-label">Features</div>
-                      <div className="menu-item-sub">FCR, biomass, team access</div>
-                    </div>
-                  </a>
-                  <a className="menu-item" href="/#pricing" onClick={() => setIsMenuOpen(false)}>
-                    <div className="menu-item-icon"><Tag style={{ width: 16, height: 16 }} /></div>
-                    <div className="menu-item-text">
-                      <div className="menu-item-label">Pricing</div>
-                      <div className="menu-item-sub">Free forever</div>
-                    </div>
-                  </a>
-                  <a className="menu-item" href="/#faq" onClick={() => setIsMenuOpen(false)}>
-                    <div className="menu-item-icon"><MessageCircle style={{ width: 16, height: 16 }} /></div>
-                    <div className="menu-item-text">
-                      <div className="menu-item-label">FAQ</div>
-                      <div className="menu-item-sub">Common questions answered</div>
+                      <div className="menu-item-label">For Seafood Buyers</div>
+                      <div className="menu-item-sub">Direct procurement &amp; supply network</div>
                     </div>
                   </a>
                   <div className="menu-divider" />
@@ -123,21 +111,21 @@ export default function HeaderFooterWrapper({ children }: { children: React.Reac
                     <div className="menu-item-icon"><Info style={{ width: 16, height: 16 }} /></div>
                     <div className="menu-item-text">
                       <div className="menu-item-label">About</div>
-                      <div className="menu-item-sub">Our mission & the team</div>
+                      <div className="menu-item-sub">Our mission &amp; the team</div>
                     </div>
                   </a>
                   <Link className="menu-item" href="/shop" onClick={() => setIsMenuOpen(false)}>
                     <div className="menu-item-icon"><ShoppingCart style={{ width: 16, height: 16 }} /></div>
                     <div className="menu-item-text">
                       <div className="menu-item-label">Shop</div>
-                      <div className="menu-item-sub">Feeds & inputs</div>
+                      <div className="menu-item-sub">Feeds &amp; inputs</div>
                     </div>
                   </Link>
                   <Link className="menu-item" href="/contact" onClick={() => setIsMenuOpen(false)}>
                     <div className="menu-item-icon"><Mail style={{ width: 16, height: 16 }} /></div>
                     <div className="menu-item-text">
                       <div className="menu-item-label">Contact Us</div>
-                      <div className="menu-item-sub">Get support & order feeds</div>
+                      <div className="menu-item-sub">Get support &amp; order feeds</div>
                     </div>
                   </Link>
                 </div>
@@ -147,7 +135,7 @@ export default function HeaderFooterWrapper({ children }: { children: React.Reac
                     <div className="menu-item-icon"><BookOpen style={{ width: 16, height: 16 }} /></div>
                     <div className="menu-item-text">
                       <div className="menu-item-label">Blog</div>
-                      <div className="menu-item-sub">Farm tips, FCR guides, disease alerts</div>
+                      <div className="menu-item-sub">Farm tips, pond guides, disease alerts</div>
                     </div>
                   </Link>
                   <a className="menu-item" href="#" onClick={() => setIsMenuOpen(false)}>
@@ -156,13 +144,13 @@ export default function HeaderFooterWrapper({ children }: { children: React.Reac
                       <div className="menu-item-label">Shrimp Price Tracker</div>
                       <div className="menu-item-sub">Daily vannamei rates by state</div>
                     </div>
-                    <span className="menu-item-badge new">Soon</span>
+                    <span className="menu-item-badge new">Live in App</span>
                   </a>
                   <a className="menu-item" href="#" onClick={() => setIsMenuOpen(false)}>
                     <div className="menu-item-icon"><Layers style={{ width: 16, height: 16 }} /></div>
                     <div className="menu-item-text">
                       <div className="menu-item-label">Disease Alerts</div>
-                      <div className="menu-item-sub">EMS, WSSV & outbreak news</div>
+                      <div className="menu-item-sub">EMS, WSSV &amp; outbreak news</div>
                     </div>
                     <span className="menu-item-badge new">Soon</span>
                   </a>
@@ -180,7 +168,7 @@ export default function HeaderFooterWrapper({ children }: { children: React.Reac
             <div className="menu-footer">
               <Link className="menu-footer-dl" href="/download" onClick={() => setIsMenuOpen(false)}>
                 <Download style={{ width: 16, height: 16 }} />
-                Download Aquanubandh, Free
+                Download Aquanubandh Plus, Free
               </Link>
             </div>
           </div>
@@ -195,8 +183,8 @@ export default function HeaderFooterWrapper({ children }: { children: React.Reac
               <X style={{ width: 15, height: 15 }} />
             </button>
             <div className="dl-modal-logo">
-              <img src="/assets/logo.webp" alt="Aquanubandh - Smart Aquaculture Management Logo" />
-              <span>Aquanubandh</span>
+              <img src="/assets/logo.webp" alt="Aquanubandh Plus - Smart Aquaculture Management Logo" />
+              <span>Aquanubandh Plus</span>
             </div>
             <div className="dl-modal-title">Download the app</div>
             <div className="dl-modal-sub">Free for Indian shrimp farmers. Available on iOS and Android.</div>

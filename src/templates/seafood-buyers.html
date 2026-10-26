@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Seafood Buyers | Aquanubandh</title>
+  <meta name="description"
+    content="Aquanubandh for Seafood Buyers — Source export-grade shrimp across all varieties and counts directly from our network of 500+ verified farmers in India.">
+  <meta name="keywords"
+    content="aquanubandh seafood buyers, wholesale shrimp sourcing India, vannamei bulk supply, black tiger shrimp, farm-gate shrimp procurement">
+  <link rel="canonical" href="https://aquanubandh.com/seafood-buyers">
+  <link rel="icon" type="image/webp" href="/assets/logo.webp">
+  <link rel="apple-touch-icon" href="/assets/logo.webp">
+  <link rel="shortcut icon" href="/assets/logo.webp" type="image/webp">
+  <meta name="robots" content="index, follow">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aquanubandh.com/seafood-buyers">
+  <meta property="og:title" content="For Seafood Buyers | Aquanubandh">
+  <meta property="og:description"
+    content="Source export-grade shrimp of all varieties directly from Aquanubandh's network of 500+ verified farmers.">
+  <meta property="og:image" content="https://aquanubandh.com/assets/logo.webp">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://aquanubandh.com/seafood-buyers">
+  <meta name="twitter:title" content="For Seafood Buyers | Aquanubandh">
+  <meta name="twitter:description"
+    content="Source export-grade shrimp of all varieties directly from Aquanubandh's network of 500+ verified farmers.">
+  <meta name="twitter:image" content="https://aquanubandh.com/assets/logo.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="/assets/7788e50a-930a-444e-aadd-7bc12679d697.js"></script>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --blue: #2563EB;
+      --blue-dark: #1d4ed8;
+      --blue-light: #eff6ff;
+      --cyan: #38bdf8;
+      --ink: #0f172a;
+      --ink-muted: #64748b;
+      --ink-faint: #94a3b8;
+      --bg: #fafaf8;
+      --bg-card: #ffffff;
+      --border: rgba(15, 23, 42, 0.08);
+      --green: #16a34a;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-xl: 28px;
+      --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
+      --shadow-md: 0 4px 16px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(15, 23, 42, 0.04);
+      --shadow-lg: 0 20px 48px rgba(15, 23, 42, 0.12), 0 8px 16px rgba(15, 23, 42, 0.06);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .serif {
+      font-family: 'DM Serif Display', serif;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.5;
+        transform: scale(0.8);
+      }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: none;
+    }
+
+    .reveal-d1 {
+      transition-delay: 0.1s;
+    }
+
+    .reveal-d2 {
+      transition-delay: 0.2s;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    /* NAV */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 0 32px;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background: rgba(250, 250, 248, 0.85);
+      border-bottom: 1px solid var(--border);
+      transition: box-shadow 0.3s;
+    }
+
+    .nav.scrolled {
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      object-fit: cover;
+    }
+
+    .nav-logo-name {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: -0.3px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ink-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav-hamburger {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: var(--ink-muted);
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .nav-hamburger:hover {
+      background: white;
+      color: var(--ink);
+    }
+
+    /* Full-screen Glassmorphism Menu */
+    .menu-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+      background: rgba(8, 14, 40, 0.75);
+      backdrop-filter: blur(24px) saturate(180%);
+      -webkit-backdrop-filter: blur(24px) saturate(180%);
+    }
+
+    .menu-overlay.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .menu-panel {
+      position: fixed;
+      inset: 0;
+      z-index: 201;
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      pointer-events: none;
+      transform: scale(0.97);
+      transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1), transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: opacity, transform;
+    }
+
+    .menu-panel.open {
+      opacity: 1;
+      pointer-events: all;
+      transform: scale(1);
+    }
+
+    .menu-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 32px;
+      flex-shrink: 0;
+    }
+
+    .menu-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .menu-logo img {
+      width: 30px;
+      height: 30px;
+      border-radius: 7px;
+      object-fit: cover;
+    }
+
+    .menu-logo span {
+      font-weight: 700;
+      font-size: 16px;
+      color: white;
+      letter-spacing: -0.3px;
+    }
+
+    .menu-close {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: rgba(255, 255, 255, 0.8);
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .menu-close:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: rotate(90deg);
+    }
+
+    .menu-body {
+      flex: 1;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 20px 40px;
+      overflow-y: auto;
+    }
+
+    .menu-body-inner {
+      width: 100%;
+      max-width: 760px;
+      margin: auto 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px 48px;
+    }
+
+    .menu-section-title {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.3);
+      margin-bottom: 10px;
+      padding: 0 4px;
+    }
+
+    .menu-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 13px 16px;
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.85);
+      cursor: pointer;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0);
+      border: 1px solid rgba(255, 255, 255, 0);
+      transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.2s;
+    }
+
+    .menu-item:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.12);
+      color: white;
+      transform: translateX(4px);
+    }
+
+    .menu-item-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.75);
+      flex-shrink: 0;
+    }
+
+    .menu-item-text {
+      flex: 1;
+    }
+
+    .menu-item-label {
+      font-size: 15px;
+      font-weight: 600;
+      color: white;
+      line-height: 1.2;
+    }
+
+    .menu-item-sub {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.4);
+      margin-top: 2px;
+    }
+
+    .menu-item-badge {
+      font-size: 9px;
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: rgba(255, 255, 255, 0.6);
+      border-radius: 5px;
+      padding: 2px 7px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      flex-shrink: 0;
+    }
+
+    .menu-item-badge.new {
+      background: rgba(74, 222, 128, 0.15);
+      border-color: rgba(74, 222, 128, 0.25);
+      color: #4ade80;
+    }
+
+    .menu-divider {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.08);
+      margin: 6px 16px;
+    }
+
+    .menu-footer {
+      padding: 16px 32px 28px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      flex-shrink: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .menu-footer-dl {
+      padding: 14px 40px;
+      background: white;
+      color: var(--blue);
+      border: none;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    /* HERO */
+    .hero {
+      flex: 1;
+      padding: 100px 32px 60px;
+      background: linear-gradient(175deg, #00179f 0%, #0c4ad2 45%, #2563eb 100%);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 70% 40%, rgba(56, 189, 248, 0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: linear-gradient(to bottom, transparent, #0f172a);
+      pointer-events: none;
+    }
+
+    .hero-text {
+      padding-top: 32px;
+      padding-bottom: 48px;
+      max-width: 740px;
+      margin: 0 auto;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 100px;
+      padding: 7px 16px;
+      font-size: 12px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 28px;
+    }
+
+    .hero-badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #4ade80;
+      animation: pulse-dot 2s ease infinite;
+      flex-shrink: 0;
+    }
+
+    .hero-h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 64px;
+      line-height: 1.05;
+      color: white;
+      margin-bottom: 22px;
+    }
+
+    .hero-h1 em {
+      font-style: italic;
+      color: #93c5fd;
+    }
+
+    .hero-sub {
+      font-size: 17px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.75);
+      max-width: 580px;
+      margin: 0 auto 40px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-download-hero {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: white;
+      border: none;
+      border-radius: var(--radius-md);
+      padding: 14px 28px;
+      color: var(--blue);
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      text-decoration: none;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .btn-download-hero:hover {
+      background: #f0f6ff;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-wa {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: var(--radius-md);
+      padding: 14px 22px;
+      color: white;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      text-decoration: none;
+    }
+
+    .btn-wa:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .section-shell {
+      padding: 88px 32px;
+      background: #0f172a;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #93c5fd;
+      margin-bottom: 14px;
+    }
+
+    .section-h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 42px;
+      line-height: 1.1;
+      color: white;
+      margin-bottom: 14px;
+    }
+
+    .section-sub {
+      font-size: 16px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.55);
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    .feat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .feat-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+    }
+
+    .feat-icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(37, 99, 235, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      color: #93c5fd;
+    }
+
+    .feat-title {
+      font-size: 16px;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .feat-body {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.55);
+      line-height: 1.65;
+    }
+
+    .footer {
+      background: #0f172a;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 40px 32px;
+      margin-top: auto;
+      flex-shrink: 0;
+    }
+
+    .footer-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-logo img {
+      width: 30px;
+      height: 30px;
+      border-radius: 7px;
+      object-fit: cover;
+    }
+
+    .footer-logo-name {
+      font-weight: 700;
+      font-size: 15px;
+      color: white;
+    }
+
+    .footer-meta {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.35);
+      margin-top: 6px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.5);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .hero-h1 {
+        font-size: 40px;
+      }
+      .feat-grid {
+        grid-template-columns: 1fr;
+      }
+      .menu-body-inner {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="main-nav">
+    <div class="nav-inner">
+      <a class="nav-logo" href="/">
+        <img src="/assets/logo.webp" alt="Aquanubandh Logo">
+        <span class="nav-logo-name">Aquanubandh</span>
+      </a>
+      <div class="nav-links">
+        <a href="/farmers">For Farmers</a>
+        <a href="/seafood-buyers" class="active">For Seafood Buyers</a>
+      </div>
+      <div class="nav-right">
+        <button class="nav-hamburger" id="menu-open-btn" aria-label="Open menu">
+          <i data-lucide="menu" style="width:18px;height:18px;"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SLIDE-OUT MENU OVERLAY -->
+  <div class="menu-overlay" id="menu-overlay"></div>
+
+  <!-- SLIDE-OUT MENU PANEL -->
+  <div class="menu-panel" id="menu-panel">
+    <div class="menu-header">
+      <div class="menu-logo">
+        <img src="/assets/logo.webp" alt="Aquanubandh Plus Logo">
+        <span>Aquanubandh Plus</span>
+      </div>
+      <button class="menu-close" id="menu-close-btn">
+        <i data-lucide="x" style="width:16px;height:16px;"></i>
+      </button>
+    </div>
+
+    <div class="menu-body">
+      <div class="menu-body-inner">
+        <!-- Left column -->
+        <div class="menu-col">
+          <div class="menu-section-title">Pages</div>
+          <a class="menu-item" href="/" id="menu-link-home">
+            <div class="menu-item-icon"><i data-lucide="home" style="width:16px;height:16px;"></i></div>
+            <div class="menu-item-text">
+              <div class="menu-item-label">Home</div>
+              <div class="menu-item-sub">Farmers &amp; seafood buyers hub</div>
+            </div>
+          </a>
+          <a class="menu-item" href="/farmers" id="menu-link-farmers">
+            <div class="menu-item-icon"><i data-lucide="smartphone" style="width:16px;height:16px;"></i></div>
+            <div class="menu-item-text">
+              <div class="menu-item-label">For Farmers (Software)</div>
+              <div class="menu-item-sub">Offline, attendance, inventory &amp; prices</div>
+            </div>
+          </a>
+          <a class="menu-item" href="/seafood-buyers" id="menu-link-buyers">
+            <div class="menu-item-icon"><i data-lucide="truck" style="width:16px;height:16px;"></i></div>
+            <div class="menu-item-text">
+              <div class="menu-item-label">For Seafood Buyers</div>
+              <div class="menu-item-sub">Direct procurement &amp; supply network</div>
+            </div>
+          </a>
+          <div class="menu-divider"></div>
+          <div class="menu-section-title">Company</div>
+          <a class="menu-item" href="/about" id="menu-link-about">
+            <div class="menu-item-icon"><i data-lucide="info" style="width:16px;height:16px;"></i></div>
+            <div class="menu-item-text">
+              <div class="menu-item-label">About</div>
+              <div class="menu-item-sub">Our mission &amp; the team</div>
+            </div>
+          </a>
+          <a class="menu-item" href="/shop" id="menu-link-shop">
+            <div class="menu-item-icon"><i data-lucide="shopping-cart" style="width:16px;height:16px;"></i></div>
+            <div class="menu-item-text">
+              <div class="menu-item-label">Shop</div>
+              <div class="menu-item-sub">Feeds &amp; inputs</div>
+            </div>
+          </a>
+          <a class="menu-item" href="/contact">
+            <div class="menu-item-icon"><i data-lucide="mail" style="width:16px;height:16px;"></i></div>
+            <div class="menu-item-text">
+              <div class="menu-item-label">Contact Us</div>
+              <div class="menu-item-sub">Get support &amp; order feeds</div>
+            </div>
+          </a>
+        </div>
+        <!-- Right column -->
+        <div class="menu-col">
+          <div class="menu-section-title">Resources</div>
+          <a class="menu-item" href="/blog" id="menu-link-blog">
+            <div class="menu-item-icon"><i data-lucide="book-open" style="width:16px;height:16px;"></i></div>
+            <div class="menu-item-text">
+              <div class="menu-item-label">Blog</div>
+              <div class="menu-item-sub">Farm tips, pond guides, disease alerts</div>
+            </div>
+          </a>
+          <a class="menu-item" href="#">
+            <div class="menu-item-icon"><i data-lucide="trending-up" style="width:16px;height:16px;"></i></div>
+            <div class="menu-item-text">
+              <div class="menu-item-label">Shrimp Price Tracker</div>
+              <div class="menu-item-sub">Daily vannamei rates by state</div>
+            </div>
+            <span class="menu-item-badge new">Live in App</span>
+          </a>
+          <a class="menu-item" href="#">
+            <div class="menu-item-icon"><i data-lucide="alert-triangle" style="width:16px;height:16px;"></i></div>
+            <div class="menu-item-text">
+              <div class="menu-item-label">Disease Alerts</div>
+              <div class="menu-item-sub">EMS, WSSV &amp; outbreak news</div>
+            </div>
+            <span class="menu-item-badge new">Soon</span>
+          </a>
+          <a class="menu-item" href="#">
+            <div class="menu-item-icon"><i data-lucide="calculator" style="width:16px;height:16px;"></i></div>
+            <div class="menu-item-text">
+              <div class="menu-item-label">Calculator</div>
+              <div class="menu-item-sub">Free standalone tool</div>
+            </div>
+            <span class="menu-item-badge new">Soon</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-footer">
+      <a class="menu-footer-dl" href="/download">
+        <i data-lucide="download" style="width:16px;height:16px;"></i>
+        Download Aquanubandh Plus, Free
+      </a>
+    </div>
+  </div>
+
+  <!-- SEAFOOD BUYERS HERO -->
+  <section class="hero">
+    <div class="container" style="width: 100%;">
+      <div class="hero-text" style="max-width: 640px;">
+        <h1 class="hero-h1">Seafood Buyers</h1>
+        <p class="hero-sub" style="font-size: 18px; margin-bottom: 28px;">To know about our offering, contact us.</p>
+        <div class="hero-actions">
+          <a class="btn-download-hero" href="/contact">
+            <i data-lucide="mail" style="width:18px;height:18px;"></i>
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">
+          <img src="/assets/logo.webp" alt="Aquanubandh Logo">
+          <span class="footer-logo-name">Aquanubandh</span>
+        </div>
+        <div class="footer-meta">© 2026 Aquanubandh · Connecting 500+ Indian shrimp farmers with domestic &amp; global seafood buyers.</div>
+      </div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/farmers">For Farmers</a>
+        <a href="/seafood-buyers">For Seafood Buyers</a>
+        <a href="/contact">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => io.observe(el));
+
+    const menuOpenBtn = document.getElementById('menu-open-btn');
+    const menuCloseBtn = document.getElementById('menu-close-btn');
+    const menuOverlay = document.getElementById('menu-overlay');
+    const menuPanel = document.getElementById('menu-panel');
+
+    function openMenu() {
+      menuOverlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      menuPanel.getBoundingClientRect();
+      menuPanel.classList.add('open');
+      lucide.createIcons();
+    }
+    function closeMenu() {
+      menuPanel.classList.remove('open');
+      menuOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    menuOpenBtn.addEventListener('click', openMenu);
+    menuCloseBtn.addEventListener('click', closeMenu);
+    menuOverlay.addEventListener('click', closeMenu);
+  </script>
+</body>
+
+</html>
